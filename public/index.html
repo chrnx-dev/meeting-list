@@ -25,7 +25,7 @@
 <body class="ng-cloak">
 
   <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <a href="#!/" class="navbar-brand">Random List</a>
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -35,7 +35,7 @@
         </button>
       </div>
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul id="navbar-main" class="nav collapse navbar-collapse navbar-nav navbar-right">
         <li><a href="#!/" >Home</a></li>
         <li><a href="#!/dashboard">Dashboard</a></li>
         <li><a href="#!/about">Developer</a></li>
@@ -45,7 +45,7 @@
   </div>
 
 
-  <section class="container" ui-view>
+  <section class="container-fluid" ui-view>
 
   </section>
   <!-- bower:js -->
@@ -75,6 +75,7 @@
 
   <script src="modules/game/game.module.js"></script>
   <script src="modules/game/controllers/game.controller.js"></script>
+  <script src="modules/game/controllers/developers.controller.js"></script>
   <script src="modules/game/directives/game.directive.js"></script>
   <script src="modules/game/config/game.route.js"></script>
 
