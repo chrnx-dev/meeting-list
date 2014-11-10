@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="lib/angular-loading-bar/build/loading-bar.css" />
   <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="lib/openwebicons/css/openwebicons.css" />
+  <link rel="stylesheet" href="lib/openwebicons/css/openwebicons-bootstrap.css" />
   <!-- endbower -->
   <link rel="stylesheet" href="modules/game/css/theme.css">
   <link rel="stylesheet" href="modules/game/css/style.css">
@@ -45,9 +47,13 @@
   </div>
 
 
-  <section class="container-fluid" ui-view>
+  <section class="container-fluid" ui-view></section>
 
-  </section>
+  <footer class="footer">
+    <i class="icon-git-colored"></i>
+    <i class="icon-html5-colored"></i>
+    <i class="icon-javascript-colored"></i>
+  </footer>
   <!-- bower:js -->
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -63,6 +69,8 @@
   <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="lib/angular-loading-bar/build/loading-bar.js"></script>
   <script src="lib/underscore/underscore.js"></script>
+  <script src="lib/angular-gravatar/build/md5.js"></script>
+  <script src="lib/angular-gravatar/build/angular-gravatar.js"></script>
   <!-- endbower -->
 
 	<script src="/socket.io/socket.io.js"></script>
@@ -77,6 +85,7 @@
   <script src="modules/game/controllers/game.controller.js"></script>
   <script src="modules/game/controllers/developers.controller.js"></script>
   <script src="modules/game/directives/game.directive.js"></script>
+  <script src="modules/game/directives/player.directive.js"></script>
   <script src="modules/game/config/game.route.js"></script>
 
   <!-- Dashboard Module -->

@@ -10,6 +10,7 @@ body {
     color: #47a3da;
     font-weight: 400;
     padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 h1, h2,h3,h4,h5,h6{
@@ -35,24 +36,60 @@ canvas {
 
 .player-wrap{
 	width: 100%;
-	height: 120px;
+
 	padding: 10px;
 }
 
-.player-wrap .player{
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-	border: 1px solid #ebebeb;
-	border-radius: 5px;
-	height: 100%;
+.player {
+	height: 69px;
+}
+.player-info {
+	background-color: #f7f7f7;
+	border-width: 1px 1px 1px 0;
+	border-style: solid;
+	border-color: #ebebeb;
+	border-radius: 0 5px 5px 0;
+	margin-left: -10px;
+	text-indent: 15px;
+}
+
+.player-stats{
+	text-indent: 0;
+}
+
+.player-stats .player-probability,
+.player-stats .player-handicap{
+	color: #333;
+	font-size: 0.7em;
+}
+
+.player-stats .player-probability span{
+	font-size: 1.4em;
+}
+
+.player-avatar {
+	z-index: 2;
+}
+.player-avatar img{
+	-webkit-box-shadow: 3px 0 0 0 #ebebeb;
+	-moz-box-shadow:    3px 0 0 0 #ebebeb;
+	box-shadow:         3px 0 0 0 #ebebeb;
 
 }
+
+
+/** GENERAL RULES **/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  font-size: 1.8em;
+  z-index: 25;
+}
+
 
 /** INFO **/
 .animate {

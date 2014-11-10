@@ -16,6 +16,8 @@
     "angular-ui-router": "~0.2.10",
     "angular-loading-bar": "~0.5.1",
     "fontawesome": "~4.2.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "openwebicons": "~1.2.3",
+    "angular-gravatar": "~0.2.3"
   }
 }
